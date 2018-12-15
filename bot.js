@@ -375,7 +375,7 @@ client.on('message', message => {
   if (!message.content.startsWith(PREFIX)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "312244272000663564") return;
+  if (message.author.id !== "513052517538725888") return;
 
 
 

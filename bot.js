@@ -367,8 +367,9 @@ client.on('message', message => {
 
 //vip
 
-var prefix = "#vip"
 client.on('message', message => {
+	var PREFIX = "#vip"
+var prefix = "#vip"
   if (!message.content.startsWith(PREFIX)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');

@@ -366,10 +366,9 @@ client.on('message', message => {
 });
 
 //vip
+	var PREFIX = "#vip"
 
 client.on('message', message => {
-	var PREFIX = "#vip"
-var prefix = "#vip"
   if (!message.content.startsWith(PREFIX)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
@@ -392,10 +391,10 @@ if (message.content.startsWith(PREFIX + 'avatar')) {
   client.user.setAvatar(argresult);
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
-if(message.content.startsWith(prefix + 'listening')) {
+if(message.content.startsWith(PREFIX + 'listening')) {
     client.user.setActivity(args.join(' '), {type: 'LISTENING'});
 }
-if(message.content.startsWith(prefix + 'watching')) {
+if(message.content.startsWith(PREFIX + 'watching')) {
     client.user.setActivity(args.join(' '), {type: 'WATCHING'});
 }
 });

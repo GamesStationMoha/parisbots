@@ -369,7 +369,7 @@ client.on('message', message => {
 });
 
 //vip
-	var PREFIX = "#vip"
+	var PREFIX = "$vip"
 
 client.on('message', message => {
   if (!message.content.startsWith(PREFIX)) return;

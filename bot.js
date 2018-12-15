@@ -392,11 +392,9 @@ if (message.content.startsWith(PREFIX + 'avatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 if(message.content.startsWith(prefix + 'listening')) {
-    else {
     client.user.setActivity(args.join(' '), {type: 'LISTENING'});
 }
 if(message.content.startsWith(prefix + 'watching')) {
-    else {
     client.user.setActivity(args.join(' '), {type: 'WATCHING'});
 }
 });
